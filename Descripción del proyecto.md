@@ -1,4 +1,4 @@
-<<UML Sistema de Clínica de Salud>>
+**UML Sistema de Clínica de Salud**
 
 Objetivo.-
 > Diseñar un modelo de clases aplicando los conceptos vistos respecto a relaciones de asociación, agregación, composición, dependencia y herencia.
