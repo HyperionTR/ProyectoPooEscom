@@ -8,6 +8,16 @@ public class Cita {
 	private int hora;
 	private Paciente paciente;
 	private Medico medico;
-	private Receta[] recetas;
+
+	public Cita(Calendar fecha,
+				int hora,
+				Paciente paciente,
+				Medico medico){
+		this.fecha=fecha;
+		this.hora=hora;
+		this.paciente=paciente;
+		this.medico=medico;
+	}
+	
 	
 }

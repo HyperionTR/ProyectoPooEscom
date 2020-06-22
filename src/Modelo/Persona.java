@@ -9,5 +9,20 @@ public abstract class Persona {
 	protected String apellidoMaterno;
 	protected Calendar fechaNacimiento;
 	protected String domicilio;
-	protected String[] telefonos;
+	protected ArrayList<String> telefonos;
+	
+	public Persona(	String nombre,
+					String apellidoPaterno,
+					String apellidoMaterno,
+					String domicilio,
+					ArrayList<String> telefonos,
+					Calendar nacimiento){
+		this.nombre=nombre;
+		this.apellidoPaterno=apellidoPaterno;
+		this.apellidoMaterno=apellidoMaterno;
+		this.domicilio=domicilio;
+		this.telefonos=telefonos;
+		this.fechaNacimiento=nacimiento;
+	}
+	
 }
