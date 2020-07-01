@@ -7,7 +7,11 @@ import Modelo.*;
 import Vista.Test2;
 
 public class Factory {
-
+	
+	//EL HASH MAP FUNCIONA DE MANERA SIMILAR A LO QUE SERÍA UNA MICRO-BASE DE DATOS
+	//REGISTRA AL PACIENTE SEGÚN SU CURP COMO LLAVE
+	//LO HICE PARA QUE EN LAS INTERFACES, PODAMOS OBTENER RÁPIDAMENTE UN PACIENTE
+	//CON TAN SÓLO SABER SU CURP
 	private static HashMap<String,Paciente> pacientes=new HashMap<String,Paciente>();
 	private static ArrayList<Medico> medicos= new ArrayList<Medico>();
 	private static ArrayList<Enfermera> enfermeras= new ArrayList<Enfermera>();
@@ -32,6 +36,7 @@ public class Factory {
 			m.preescribeReceta();
 			m.emiteDiagnostico();
 		}
+		//TEMPORAL, CADA ENFERMERA REGISTRA UNA CITA
 		for(Enfermera e:enfermeras)
 			e.registrarCita(pacientes.get("CURP1"), medicos.get(0), Calendar.getInstance(), 1600);
 	}
