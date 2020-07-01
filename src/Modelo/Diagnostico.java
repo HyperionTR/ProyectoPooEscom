@@ -11,9 +11,33 @@ public class Diagnostico {
 	private ArrayList<Receta> recetas;
 	
 	public Diagnostico(ArrayList<String> sintomas,String padecimiento, ArrayList<Receta> recetas){
-		this.sintomas=sintomas;
-		this.padecimiento=padecimiento;
-		this.recetas=recetas;
+		this.setSintomas(sintomas);
+		this.setPadecimiento(padecimiento);
+		this.setRecetas(recetas);
+	}
+
+	public ArrayList<String> getSintomas() {
+		return sintomas;
+	}
+
+	public void setSintomas(ArrayList<String> sintomas) {
+		this.sintomas = sintomas;
+	}
+
+	public String getPadecimiento() {
+		return padecimiento;
+	}
+
+	public void setPadecimiento(String padecimiento) {
+		this.padecimiento = padecimiento;
+	}
+
+	public ArrayList<Receta> getRecetas() {
+		return recetas;
+	}
+
+	public void setRecetas(ArrayList<Receta> recetas) {
+		this.recetas = recetas;
 	}
 	
 }

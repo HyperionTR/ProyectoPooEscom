@@ -40,6 +40,6 @@ Descripción.-
 > Existen 3 tipos de personas que interactúan directa e indirectamente en el sistema. 
 > La clase paciente es la que mayor información registra ya que requiere un historial clínico con datos personales y detalles.
 > El médico por su parte atiene a un paciente a través de una cita y emite un diagnostico que puede o no estar asociado con alguna enfermedad que requiere de 1 o varias recetas medicas.
-> A su ve una receta medica se compone de un conjunto de medicamentos con un tratamiento especifico.
+> A su vez una receta medica se compone de un conjunto de medicamentos con un tratamiento especifico.
 > La enfermera realiza acciones directas en el sistema para registrar pacientes y sus respectivas citas. 
 
