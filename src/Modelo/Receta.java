@@ -8,10 +8,26 @@ public class Receta {
 	private ArrayList<Medicamento> medicamentos;
 	
 	public Receta(ArrayList<String> tratamiento, ArrayList<Medicamento> medicamentos){
-		this.tratamiento=tratamiento;
-		this.medicamentos=medicamentos;
+		this.setTratamiento(tratamiento);
+		this.setMedicamentos(medicamentos);
 	}
 	
 	public void imprimirReceta(){}
+
+	public ArrayList<String> getTratamiento() {
+		return tratamiento;
+	}
+
+	public void setTratamiento(ArrayList<String> tratamiento) {
+		this.tratamiento = tratamiento;
+	}
+
+	public ArrayList<Medicamento> getMedicamentos() {
+		return medicamentos;
+	}
+
+	public void setMedicamentos(ArrayList<Medicamento> medicamentos) {
+		this.medicamentos = medicamentos;
+	}
 	
 }
