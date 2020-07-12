@@ -1,6 +1,7 @@
 package Controlador;
 
 import Modelo.*;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.ArrayList;
@@ -53,6 +54,7 @@ public class ConOutput {
 	}
 	
 	public static void printMedicos(){
+                
 		for(Medico med:Factory.getMedicos()){
 			//Atributos de la persona
 			String s="";
@@ -62,7 +64,7 @@ public class ConOutput {
 			s+="\nTeléfonos: \n";
 			for(String j:med.getTelefonos())	
 				s+=j+"\n";
-			s+="Nacimiento: "+med.getFechaNacimiento().get(Calendar.DAY_OF_MONTH);
+			s+="Nacimiento: "+ med.getFechaNacimiento().get(Calendar.DAY_OF_MONTH);
 			s+="/"+med.getFechaNacimiento().getDisplayName(Calendar.MONTH, Calendar.LONG, new Locale("es"));
 			s+="/"+med.getFechaNacimiento().get(Calendar.YEAR);
 			

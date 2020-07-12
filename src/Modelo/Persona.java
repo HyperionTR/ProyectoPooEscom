@@ -17,12 +17,12 @@ public abstract class Persona {
 					String domicilio,
 					ArrayList<String> telefonos,
 					Calendar nacimiento){
-		this.setNombre(nombre);
-		this.setApellidoPaterno(apellidoPaterno);
-		this.setApellidoMaterno(apellidoMaterno);
-		this.setDomicilio(domicilio);
-		this.setTelefonos(telefonos);
-		this.setFechaNacimiento(nacimiento);
+		this.nombre=nombre;
+		this.apellidoPaterno=apellidoPaterno;
+		this.apellidoMaterno=apellidoMaterno;
+		this.domicilio=domicilio;
+		this.telefonos=telefonos;
+		this.fechaNacimiento=nacimiento;
 	}
 
 	public String getNombre() {

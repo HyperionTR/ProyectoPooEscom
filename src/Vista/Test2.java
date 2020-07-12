@@ -90,7 +90,7 @@ public class Test2 {
 		//ESTE BOTÓN CREA UN PACIENTE DE PRUEBA
 		btnTest.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Factory.crearPaciente(txtInput.getText(), "Test", "Test", "", new ArrayList<String>(3), Calendar.getInstance(), txtInput.getText(), "", Factory.getHistoriales().get(0));
+				Factory.crearPaciente(txtInput.getText().toString(), "Test", "Test", "Test", new ArrayList<String>(3), Calendar.getInstance(), txtInput.getText(), "", Factory.getHistoriales().get(0));
 				txtOutput.setText(Factory.getPacientes().get(txtInput.getText()).getNombre());
 				ConOutput.imprimirInfo();
 			}
